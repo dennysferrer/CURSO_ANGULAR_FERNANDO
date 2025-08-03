@@ -1,0 +1,16 @@
+<style>
+    .activeLink {
+        color: red;
+        text-decoration: underline;
+    }
+</style>
+
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <a class="navbar-brand" routerLink="/" routerLinkActive="activeLink"
+    [routerLinkActiveOptions]="{ exact: true }">Contador</a>
+    <a class="navbar-brand" routerLink="/hero" routerLinkActive="activeLink"
+    [routerLinkActiveOptions]="{ exact: true }">Heroes</a>
+    <a class="navbar-brand" routerLink="/dragonball" routerLinkActive="activeLink"
+    [routerLinkActiveOptions]="{ exact: true }">Dragon Ball</a>
+</nav>

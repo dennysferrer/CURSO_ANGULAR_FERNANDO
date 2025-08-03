@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>{{ name() }}</h1>
+
+    <div class="container grid grid-cols-2 gap-4">
+        <td class="font-bold">Nombre:</td>
+        <dd class="text-right">{{ name() }}</dd>
+
+        <td class="font-bold">Edad:</td>
+        <dd class="text-right">{{ age() }}</dd>
+
+        <td class="font-bold">Método:</td>
+        <dd class="text-right">{{ heroDescription() }}</dd>
+
+        <td class="font-bold">Capitalizado:</td>
+        <dd class="text-right">{{ capitalizeName() }}</dd>
+    </div>
+
+    <button (click)="changeHero()" class="btn btn-primary">
+        Cambiar Heroe
+    </button>
+
+    <button class="btn btn-danger" (click)="changeAge()">Cambiar edad</button>
+
+    <button (click)="resetForm()" class="btn btn-success">Reset</button>
+</div>
+
